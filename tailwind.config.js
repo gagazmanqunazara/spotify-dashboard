@@ -1,0 +1,71 @@
+/** @type {import('tailwindcss').Config} */
+
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
+module.exports = {
+  darkMode: "class",
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    fontFamily: {
+      sans: ["var(--font-satoshi)", ...fontFamily.sans],
+    },
+    fontSize: {
+      xs: "1.2rem",
+      sm: "1.4rem",
+      md: "1.6rem",
+      lg: "2rem",
+      xl: "2.4rem",
+      "2xl": "3.0rem",
+      "3xl": "4.8rem",
+    },
+    colors: {
+      light: "var(--background)",
+      dark: "var(--foreground)",
+      neutral: {
+        50: "#fafafa",
+        100: "#f4f5f3",
+        200: "#e5e7e3",
+        300: "#d2d5d0",
+        400: "#a0a49d",
+        500: "#70746c",
+        600: "#50554c",
+        700: "#3d4338",
+        800: "#242a1e",
+        900: "#141b0e",
+      },
+      primary: {
+        DEFAULT: "#1db954",
+        50: "#f0fdf4",
+        100: "#d9f9e4",
+        200: "#b6f1ca",
+        300: "#81e6a4",
+        400: "#45d377",
+        500: "#1db954",
+        600: "#149b43",
+        700: "#157c39",
+        800: "#176332",
+        900: "#15532c",
+      },
+    },
+    spacing: {
+      0: "0",
+      1: "0.4rem",
+      2: "0.8rem",
+      3: "1.2rem",
+      4: "1.6rem",
+      5: "2rem",
+      6: "2.4rem",
+      7: "2.8rem",
+      8: "3.2rem",
+      9: "3.6rem",
+      10: "4rem",
+      11: "4.4rem",
+      12: "4.8rem",
+      13: "5.2rem",
+      14: "5.6rem",
+      15: "6rem",
+    },
+    // extend: {},
+  },
+  plugins: [],
+};
