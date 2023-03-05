@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #fafafa;
+    --foreground: #020500;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@layer utilities {
+  .hero-background-dark {
+    background: linear-gradient(180deg, rgba(2, 5, 0, 0.8) 0%, #020500 100%),
+      url(http://localhost:3000/images/grid.png);
+    background-size: 20rem;
+  }
+
+  .hero-background {
+    background: linear-gradient(
+        180deg,
+        rgba(250, 250, 250, 0.2) 0%,
+        #fafafa 100%
+      ),
+      url(http://localhost:3000/images/grid.png);
+    background-size: 20rem;
+  }
+}
